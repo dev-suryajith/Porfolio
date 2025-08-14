@@ -10,6 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Suryajith</title>
@@ -21,14 +26,17 @@
             padding: 0;
             height: 100%;
             width: 100%;
+            cursor: pointer;
+
         }
 
         body {
-            background: linear-gradient(to bottom, #E6D5F7, #E6D5F7, #C9AEEA);
+            background: linear-gradient(to bottom, #f8f5f1, #e9e5df, #dcd6c9);
             background-attachment: fixed;
             font-family: sans-serif;
             color: #4B4453;
         }
+
 
         .hero h1 {
             font-family: "Zen Dots", sans-serif;
@@ -73,57 +81,204 @@
 </head>
 
 <body>
-    <nav class="w-full flex justify-center py-6 gap-5 text-sm md:gap-12 md:text-lg font-bold">
-        <a href="#"
-            class="hover:text-purple-600 hover:scale-[1.03] transition-transform transition-colors duration-300">Home</a>
-        <a href="#"
-            class="hover:text-purple-600 hover:scale-[1.03] transition-transform transition-colors duration-300">Skills</a>
-        <a href="#"
-            class="hover:text-purple-600 hover:scale-[1.03] transition-transform transition-colors duration-300">Project</a>
-        <a href="#"
-            class="hover:text-purple-600 hover:scale-[1.03] transition-transform transition-colors duration-300">About</a>
-        <a href="#"
-            class="hover:text-purple-600 hover:scale-[1.03] transition-transform transition-colors duration-300">Contact</a>
-    </nav>
+    <!-- Navbar -->
+    <div class="flex justify-center ">
+        <nav
+            class="fixed rounded-full top-5 bg-white/0 backdrop-blur-md shadow-md w-[400px] md:w-[600px] h-[40px] md:h-[80px] items-center flex justify-center py-4 gap-6 md:gap-12 text-sm md:text-lg font-bold z-50">
+            <a href="#home" class="hover:text-amber-600 hover:scale-105 transition-all duration-300">Home</a>
+            <a href="#skills" class="hover:text-amber-600 hover:scale-105 transition-all duration-300">Skills</a>
+            <a href="#projects" class="hover:text-amber-600 hover:scale-105 transition-all duration-300">Projects</a>
+            <a href="#about" class="hover:text-amber-600 hover:scale-105 transition-all duration-300">About</a>
+            <a href="#contact" class="hover:text-amber-600 hover:scale-105 transition-all duration-300">Contact</a>
+        </nav>
+    </div>
 
 
-    <div class="grid grid-cols-2 gap-[0px]">
-        <div class="hero ml-5 md:mx-auto text-center mt-[25px] md:mt-32">
-            <h1 class="text-2xl md:text-7xl font-medium">Suryajith S S</h1>
-            <h2 class="typing mt-2 md:mt-6 text-sm md:text-3xl font-bold">Full Stack Web Developer</h2>
-            <p class="text-[10px] md:text-base text-left md:w-[450px]">
+    <div id="hero" class="grid grid-cols-2 gap-[0px] mt-20">
+        <div class="hero ml-5 md:mx-auto text-center md:text-left mt-[25px] md:mt-32">
+            <h1 class="text-xl md:text-7xl font-medium text-[#bfa87a]">Suryajith S S</h1>
+            <h2 class="typing mt-2 md:mt-6 text-xs md:text-3xl font-bold text-left">Full Stack Web Developer</h2>
+            <p class="text-[10px] md:text-base sm:ml-5 text-left md:w-[500px] md:mt-10 mt-4">
                 I’m a passionate web developer who creates clean, responsive, and user-friendly websites, blending
                 creativity with functionality to deliver impactful digital experiences.
             </p>
-            <div class="flex gap-[20px]">
-                <a href="" class="text-none w-[70px] text-[7px] md:text-base md:w-[150px] bg-black text-[white] p-3">
-                    <button>View Projects</button>
+            <div class="flex gap-4 mt-4 md:mt-12 items-center">
+                <a href="#projects" class="md:w-[150px] text-center bg-[#4B4453] text-white text-[10px] md:text-sm md:text-base p-2 md:py-3 rounded-lg 
+              hover:scale-105 hover:shadow-lg transition-all duration-300 font-bold">
+                    View Projects
                 </a>
-                <a href="" class="text-none w-[70px] text-[7px] md:text-base md:w-[150px] bg-black text-[white] p-3">
-                    <button>Download CV</button>
+                <a href="./media/Suryajith_CV.pdf" class="md:w-[150px] text-center border-2 border-[#4B4453] text-[#4B4453] font-bold text-[10px] md:text-sm md:text-base p-2 md:py-3 rounded-lg
+              hover:bg-[#4B4453] hover:text-white hover:scale-105 hover:shadow-lg transition-all duration-300">
+                    Download CV
                 </a>
             </div>
+
         </div>
         <!-- Image -->
         <div class="flex justify-center">
-            <img class="h-[275px] md:h-[550px]"
+            <img class="h-[225px] md:h-[550px]"
                 src="./media/ChatGPT_Image_Aug_13__2025__08_15_45_PM-removebg-preview.png" alt="">
         </div>
     </div>
 
-    <div class="w-full" id="about">
-        <h1 class="text-5xl text-center mt-[150px] font-bold">ABOUT</h1>
-        <!-- <div class="grid grid-cols-2 gap-6"> -->
-        <div class="flex justify-center">
-            <img class="h-[550px]" src="./media/ChatGPT_Image_Aug_13__2025__08_15_45_PM-removebg-preview.png" alt="">
-            <div class="text-left w-[650px]">
-                <p>I’m a passionate web developer with a keen eye for design and detail, dedicated to creating clean,
-                    responsive, and user-friendly websites. I enjoy turning ideas into interactive digital experiences,
-                    blending creativity with functionality. Always eager to learn and explore new technologies, I strive
-                    to deliver work that’s both visually appealing and impactful</p>
+    <section id="about" class="bg-[#f8f5f1] py-20 px-6 md:px-12">
+        <div class="max-w-5xl mx-auto">
+
+            <!-- Section Title -->
+            <div class="text-center mb-12">
+                <h1 class="text-3xl md:text-5xl font-bold tracking-wider text-[#2c2c2c]">ABOUT</h1>
+                <div class="w-20 h-1 bg-[#bfa87a] mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <!-- Text Content -->
+            <div class="space-y-6 text-center md:text-left">
+                <h2 class="text-2xl md:text-3xl font-semibold text-[#2c2c2c]">Who I Am</h2>
+                <p class="md:text-lg text-sm text-left leading-relaxed text-gray-700">
+                    I’m a <span class="font-semibold text-[#bfa87a]">Full Stack Web Developer</span> with a passion for
+                    crafting
+                    <span class="font-semibold">clean, responsive, and user-friendly websites</span>.
+                    I recently graduated with a <span class="font-semibold">Bachelor’s in Computer Applications
+                        (BCA)</span> and have joined
+                    <span class="font-semibold">Luminar Technolab</span> as a MEARN Stack Intern to strengthen my skills
+                    and build real-world projects.
+                </p>
+
+                <p class="md:text-lg text-sm text-left leading-relaxed text-gray-700">
+                    My current toolkit includes <span class="font-semibold">HTML, CSS, Bootstrap, Tailwind CSS, and
+                        JavaScript</span>.
+                    I’m constantly learning and expanding my capabilities to work on both the frontend and backend,
+                    aiming to create
+                    visually stunning and highly functional digital experiences.
+                </p>
+
+                <!-- Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
+                    <div class="bg-white rounded-xl shadow p-6 text-center hover:shadow-lg transition">
+                        <h3 class="text-3xl font-bold text-[#bfa87a]">Fresher</h3>
+                        <p class="text-gray-600 text-sm">BCA Graduate</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow p-6 text-center hover:shadow-lg transition">
+                        <h3 class="text-3xl font-bold text-[#bfa87a]">Training</h3>
+                        <p class="text-gray-600 text-sm">MEARN Stack Intern</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow p-6 text-center hover:shadow-lg transition">
+                        <h3 class="text-3xl font-bold text-[#bfa87a]">5+</h3>
+                        <p class="text-gray-600 text-sm">Core Skills</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow p-6 text-center hover:shadow-lg transition">
+                        <h3 class="text-3xl font-bold text-[#bfa87a]">100%</h3>
+                        <p class="text-gray-600 text-sm">Learning Mindset</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section id="skills" class="py-10 bg-gradient-to-b from-gray-50 to-gray-100">
+        <!-- Section Title -->
+        <div class="text-center mb-12">
+            <h1 class="text-3xl md:text-5xl font-bold tracking-wider text-[#2c2c2c]">SKILLS</h1>
+            <div class="w-20 h-1 bg-[#bfa87a] mx-auto mt-3 rounded-full"></div>
+
+            <p class="mt-4 text-gray-600 text-sm md:text-lg max-w-2xl mx-auto">
+                Tools and technologies I use to design & develop modern, responsive web experiences.
+            </p>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 px-auto">
+
+            <!-- HTML -->
+            <div class="flex flex-col items-center group hover:scale-105 transform transition-all duration-300">
+                <div class="w-28 h-28 bg-white/80 backdrop-blur-lg rounded-2xl flex items-center justify-center 
+                    shadow-lg border border-gray-100 group-hover:shadow-xl group-hover:border-[#bfa87a]">
+                    <img src="./media/html-5.png" alt="HTML"
+                        class="w-16 h-16 transition-transform duration-300 group-hover:rotate-6">
+                </div>
+                <p class="mt-4 font-semibold text-gray-700 text-lg group-hover:text-[#bfa87a]">HTML</p>
+            </div>
+
+            <!-- CSS -->
+            <div class="flex flex-col items-center group hover:scale-105 transform transition-all duration-300">
+                <div class="w-28 h-28 bg-white/80 backdrop-blur-lg rounded-2xl flex items-center justify-center 
+                    shadow-lg border border-gray-100 group-hover:shadow-xl group-hover:border-blue-400">
+                    <img src="./media/css.png" alt="CSS"
+                        class="w-16 h-16 transition-transform duration-300 group-hover:-rotate-6">
+                </div>
+                <p class="mt-4 font-semibold text-gray-700 text-lg group-hover:text-blue-400">CSS</p>
+            </div>
+
+            <!-- Git -->
+            <div class="flex flex-col items-center group hover:scale-105 transform transition-all duration-300">
+                <div class="w-28 h-28 bg-white/80 backdrop-blur-lg rounded-2xl flex items-center justify-center 
+                        shadow-lg border border-gray-100 group-hover:shadow-xl group-hover:border-red-400">
+                    <img src="./media/git.png" alt="Git"
+                        class="w-16 h-16 transition-transform duration-300 group-hover:-rotate-12">
+                </div>
+                <p class="mt-4 font-semibold text-gray-700 text-lg group-hover:text-red-400">Git</p>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="flex flex-col items-center group hover:scale-105 transform transition-all duration-300">
+                <div class="w-28 h-28 bg-white/80 backdrop-blur-lg rounded-2xl flex items-center justify-center 
+                    shadow-lg border border-gray-100 group-hover:shadow-xl group-hover:border-yellow-400">
+                    <img src="./media/java-script.png" alt="JavaScript"
+                        class="w-16 h-16 transition-transform duration-300 group-hover:rotate-3">
+                </div>
+                <p class="mt-4 font-semibold text-gray-700 text-lg group-hover:text-yellow-400">JavaScript</p>
+            </div>
+
+            <!-- Figma -->
+            <div class="flex flex-col items-center group hover:scale-105 transform transition-all duration-300">
+                <div class="w-28 h-28 bg-white/80 backdrop-blur-lg rounded-2xl flex items-center justify-center 
+                    shadow-lg border border-gray-100 group-hover:shadow-xl group-hover:border-pink-400">
+                    <img src="./media/figma.png" alt="Figma"
+                        class="w-16 h-16 transition-transform duration-300 group-hover:-rotate-3">
+                </div>
+                <p class="mt-4 font-semibold text-gray-700 text-lg group-hover:text-pink-400">Figma</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="py-20 px-6 md:px-12">
+        <!-- Section Title -->
+        <div class="text-center mb-12">
+            <h1 class="text-3xl md:text-5xl font-bold tracking-wider text-[#2c2c2c]">PROJECTS</h1>
+            <div class="w-20 h-1 bg-[#bfa87a] mx-auto mt-3 rounded-full"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 p-6">
+            <div
+                class="bg-white rounded-2xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-[1.03] hover:shadow-2xl">
+                <div class="h-[200px] overflow-hidden">
+                    <img src="./media/projects/gamegrid.png.png" alt="GameGrid Project Screenshot"
+                        class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                </div>
+                <div class="p-6 flex flex-col justify-between h-[200px]">
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-800 text-center">GameGrid</h1>
+                        <p class="text-gray-600 text-center mt-3 text-sm leading-relaxed">
+                            Online game store UI developed with <span class="font-semibold">HTML, CSS</span> & <span
+                                class="font-semibold">Tailwind CSS</span>.
+                        </p>
+                    </div>
+                    <div class="flex justify-center gap-6 mt-5">
+                        <a href="https://game-grid-seven.vercel.app/" target="_blank"
+                            class="text-gray-700 hover:text-orange-500 transition text-2xl">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                        <a href="https://github.com/dev-suryajith/Game-Grid" target="_blank"
+                            class="text-gray-700 hover:text-orange-500 transition text-2xl">
+                            <i class="fa-brands fa-square-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
 
 </body>
 
